@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 
+import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from "./app.component";
 
 import { StoreModule } from "./store/store.module";
@@ -18,6 +19,7 @@ import { StoreFirstGuard } from "./storeFirst.guard";
   imports: [
     BrowserModule,
     StoreModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path: "store",
